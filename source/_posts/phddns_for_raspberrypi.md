@@ -15,10 +15,8 @@ scp ~/Downloads/phddns_rapi_3.0.2.armhf.deb pi@192.168.1.172:~/
 ```
 
 ## 安装
-通过ssh命令登陆树莓派。
-*   
-通过`su`命令切换到root用户之后
-输入如下命令进行安装：
+通过ssh命令登陆树莓派。 
+通过`su`命令切换到root用户之后输入如下命令进行安装：
 
 ```
 dpkg -i phddns_rapi_3.0.2.armhf.deb
