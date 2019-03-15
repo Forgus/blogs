@@ -23,9 +23,7 @@ SEOTitle: Forgus | Blog
 email: 815498030@qq.com
 description: ""
 keyword: ""
-header-img: img/header_img/home-bg-2-dark.png
-signature: true #show signature
-signature-img: img/signature/BeanTechSign-white.png 
+header-img: img/404-bg.jpg
 
 
 # SNS settings
@@ -63,12 +61,14 @@ sidebar: true                       # whether or not using Sidebar.
 #sidebar-about-description: "Hi, i'm John Doe"
 #sidebar-avatar: img/ironman-draw.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 widgets:
-- featured-tags
+#- featured-tags
 #- short-about
-- recent-posts
+- search
+#- recent-posts
 #- friends-blog
-- archive
-- category
+#- category
+#- archive
+
 
 # widget behavior
 ## Archive
@@ -77,7 +77,7 @@ show_count: true
 
 
 ## Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
+featured-tags: false                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
 
@@ -179,3 +179,8 @@ sitemap:
 #  type: git
 #  repository: https://github.com/YenYuHsuan/hexo-theme-beantech.git
 #  branch: gh-page
+
+search:
+  path: search.xml
+  field: post
+  content: true

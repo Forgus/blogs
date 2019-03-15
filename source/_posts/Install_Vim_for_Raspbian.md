@@ -1,4 +1,9 @@
-# Raspbian安装Vim
+---
+title: Raspbian安装Vim
+catalog: true
+tags:
+- 树莓派
+---
 ## 安装：
 执行如下命令：
 
