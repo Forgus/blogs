@@ -8,4 +8,4 @@
 public
 out
 gen
-*.json
+db.json
