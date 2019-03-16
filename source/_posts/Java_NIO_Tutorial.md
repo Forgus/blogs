@@ -3,7 +3,6 @@ title: Java NIO 教程
 catalog: true
 tags:
 - NIO
-- Java
 ---
 >Java NIO（New IO）是Java提供的IO API的另一种实现(jdk1.4+)，这意味着标准的Java IO和网络API不再是唯一的选择方案。相对于标准IO，Java NIO框架提供了一种不同的工作机制来实现流。
 

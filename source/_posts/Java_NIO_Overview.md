@@ -3,7 +3,6 @@ title: Java NIO 概览
 catalog: true
 tags:
 - NIO
-- Java
 ---
 >Java NIO 由以下核心组件构成：
 >- 通道

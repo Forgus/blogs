@@ -1,6 +1,8 @@
 ---
 title: Java NIO 通道
 catalog: true
+tags:
+- NIO
 ---
 Java NIO 通道和流很像，但有一些区别：
 
