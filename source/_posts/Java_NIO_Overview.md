@@ -53,3 +53,6 @@ Java NIO还包含了一个MappedByteBuffer，用于表示内存映射文件。
 ![](http://tutorials.jenkov.com/images/java-nio/overview-selectors.png)
 
 要使用选择器，得向它注册通道。然后调用它的select()方法。这个方法会阻塞直到有某个注册通道有事件就绪。一旦这个方法返回，线程就可以开始处理这些事件。事件包括即将到来的连接，数据已收到等。
+
+------
+[原文链接](http://tutorials.jenkov.com/java-nio/overview.html) 	作者：Jakob Jenkov

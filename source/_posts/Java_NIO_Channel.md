@@ -59,3 +59,6 @@ ServerSocketChannel 允许你监听TCP连接请求，就像web服务器那样。
 ```
 
 这里要留意下`buf.flip()`的调用。首先将数据读进缓冲区。然后反转它。接着你就可以从里面往外读数据。在下一节我将会进一步讲解更加详细的细节。                            
+
+------
+[原文链接](http://tutorials.jenkov.com/java-nio/channels.html) 	作者：Jakob Jenkov

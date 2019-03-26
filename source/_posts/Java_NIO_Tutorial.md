@@ -20,6 +20,5 @@ Java NIO可以让你非阻塞地执行IO操作。例如，一个线程可以要�
 Java NIO 框架引入了一个名为“选择器”的概念。选择器可以监听多个通道的事件（像：连接被打开，数据到达等等）。这样，单个线程可以监听多个通道的数据。
 
 ------
-
 [原文链接](http://tutorials.jenkov.com/java-nio/index.html) 	作者：Jakob Jenkov
 

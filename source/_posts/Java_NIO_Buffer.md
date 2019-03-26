@@ -204,3 +204,6 @@ compareTo()方法比较两个buffer剩余元素，用于例如常规排序。一
 
 1. buffer的首个元素小于另一个buffer。
 2. 所有元素相等，但是第一个buffer比另一个buffer更早用完(它拥有更少的元素)。
+
+------
+[原文链接](http://tutorials.jenkov.com/java-nio/buffers.html) 	作者：Jakob Jenkov
