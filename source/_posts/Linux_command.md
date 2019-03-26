@@ -1,5 +1,6 @@
 ---
 title: Linux 常用命令
+date: 2018-08-28
 catalog: true
 tags:
 - Linux

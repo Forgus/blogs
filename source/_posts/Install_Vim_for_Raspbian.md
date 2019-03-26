@@ -1,5 +1,6 @@
 ---
 title: Raspbian安装Vim
+date: 2018-10-01
 catalog: true
 tags:
 - 树莓派

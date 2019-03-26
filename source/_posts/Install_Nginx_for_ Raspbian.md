@@ -1,5 +1,6 @@
 ---
 title: Raspbian安装Nginx
+date: 2018-09-11
 catalog: true
 tags:
 - 树莓派

@@ -1,5 +1,6 @@
 ---
 title: 为树莓派安装花生壳客户端
+date: 2018-10-15
 catalog: true
 tags:
 - 树莓派

@@ -1,5 +1,6 @@
 ---
 title: Vim 实用技巧
+date: 2018-09-25
 catalog: true
 tags:
 - Vim

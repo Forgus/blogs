@@ -1,5 +1,6 @@
 ---
 title: 实施看板方法
+date: 2018-06-23
 catalog: true
 tags:
 - 持续交付

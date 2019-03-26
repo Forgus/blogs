@@ -1,5 +1,6 @@
 ---
 title: 无线无屏幕安装树莓派
+date: 2019-02-18
 catalog: true
 tags:
 - 树莓派
