@@ -129,7 +129,7 @@ Richardson在考察了数百种web service设计案例之后，提出了一种�
 
 ### Richardson成熟度模型
 
-![img](https://martinfowler.com/articles/images/richardsonMaturityModel/overview.png)
+![img](http://modela/resources/images/maturity_model.png)
 
 如图所示，该成熟度模型用4个层级来评估一个web service满足REST约束的程度，分别是：
 
@@ -138,10 +138,10 @@ Richardson在考察了数百种web service设计案例之后，提出了一种�
 - 第2级：利用HTTP动词
 - 第3级：超媒体控制
 
-
 #### 第0级：基于HTTP协议
 
-![img](https://www.crummy.com/writing/speaking/2008-QCon/img55.png)
+![level_zero](http://modela/resources/images/level_zero.png)
+
 
 这一级的web service仅仅将HTTP当做一种传输协议来使用，通常只有一个URI，只使用POST或GET方法，
 
@@ -149,19 +149,19 @@ Richardson在考察了数百种web service设计案例之后，提出了一种�
 
 #### 第1级：有清晰的资源抽象
 
-![img](https://www.crummy.com/writing/speaking/2008-QCon/img56.png)
+![img](http://modela/resources/images/level_one.png)
 
 这一级的web service不再使用单一URI，而是使用很多不一样的URI来映射不同的接口，初步具有了资源的概念，但一个URI通常依旧只使用GET或POST其中一种方法。
 
 #### 第2级：合理使用HTTP动词
 
-![img](https://www.crummy.com/writing/speaking/2008-QCon/img58.png)
+![img](http://modela/resources/images/level_two.png)
 
 这一级的web service除了严格按照ROA（Resource-Oriented Architecture，面向资源架构）来设计URI，更加充分地利用了HTTP动词的语义，每一个URI可支持多个不同的HTTP方法，用来映射对资源的不同操作。
 
 #### 第3级：能够完美支持HATEOAS
 
-![img](https://www.crummy.com/writing/speaking/2008-QCon/img66.png)
+![img](http://modela/resources/images/level_three.png)
 
 这一级的web service在第2级的基础上应用了超媒体类型，在资源表述中加入了自描述的消息和超媒体控件，实现了超文本驱动，即HATEOAS（超媒体作为应用状态的引擎）。
 

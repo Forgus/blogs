@@ -52,6 +52,16 @@ tags:
 
 ## 系统配置
 
+### 修改主机名
+
+`sudo vim /etc/hostname`
+
+替换内容为model3B
+
+`sudo vim /etc/hosts`
+
+替换`127.0.0.1 raspberry` 为`127.0.0.1 model3B`
+
 ### 替换Raspbian软件源
 
 #### 备用原文件
@@ -78,7 +88,7 @@ deb-src http://mirrors.aliyun.com/raspbian/raspbian/ stretch main contrib non-fr
 1. 编辑系统更新源文件，参考命令：`sudo vi /etc/apt/sources.list.d/raspi.list`。
 2. 修改首行网址，如下：
 
-```
+```bash
 deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui
 # Uncomment line below then 'apt-get update' to enable 'apt-get source'
 #deb-src http://archive.raspberrypi.org/debian/ stretch main ui
