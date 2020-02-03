@@ -19,7 +19,7 @@ tags:
 
 Preferences → Plugins → Marketplace → 搜索“Api Generator” → 安装该插件 → 重启IDE
 
-![img](http://modela/resources/images/install_api_generator.png)
+![img](http://forgus.vicp.io/resources/images/install_api_generator.png)
 
 # 开始使用
 
@@ -27,66 +27,66 @@ Preferences → Plugins → Marketplace → 搜索“Api Generator” → 安装
 
 选择一个Controller类，将光标定位到方法区（方法名或者方法注释），点击鼠标右键，在弹出的菜单项里选择“Generate Api”。如图所示：
 
-![img](http://modela/resources/images/upload_yapi.png)
+![img](http://forgus.vicp.io/resources/images/upload_yapi.png)
 
 首次使用会弹窗提示输入必要信息：
 
-![img](http://modela/resources/images/yapi_server_url.png)
+![img](http://forgus.vicp.io/resources/images/yapi_server_url.png)
 
 首先输入YApi服务器部署地址，接着输入项目token：
 
-![img](http://modela/resources/images/yapi_token.png)
+![img](http://forgus.vicp.io/resources/images/yapi_token.png)
 
 点击OK，则插件会自动配置，然后自动生成文档并上传到YApi。上传成功后，IDE右下角会弹出提示框：
 
-![img](http://modela/resources/images/upload_yapi_success.png)
+![img](http://forgus.vicp.io/resources/images/upload_yapi_success.png)
 
 上传效果如图：
 
-![img](http://modela/resources/images/yapi_demo.png)
+![img](http://forgus.vicp.io/resources/images/yapi_demo.png)
 
 解析规则：
 
 入参解析：
 
-![img](http://modela/resources/images/rest_param_resolve.png)
+![img](http://forgus.vicp.io/resources/images/rest_param_resolve.png)
 
-![img](http://modela/resources/images/rest_param_resolve_result.png)
+![img](http://forgus.vicp.io/resources/images/rest_param_resolve_result.png)
 
 响应解析：
 
-![img](http://modela/resources/images/rest_response_resolve.png)
+![img](http://forgus.vicp.io/resources/images/rest_response_resolve.png)
 
-![img](http://modela/resources/images/rest_response_resolve_result.png)
+![img](http://forgus.vicp.io/resources/images/rest_response_resolve_result.png)
 
 插件默认保存分类为api_generator，可以在配置项中修改默认分类：
 
 Preferences → Other Settings → Api Generator Setting → YApi Setting → Default save category，如图所示：
 
-![img](http://modela/resources/images/save_directory.png)
+![img](http://forgus.vicp.io/resources/images/save_directory.png)
 
 如果勾选了选项“Classify API automatically”，则插件会自动从类注释里抽取分类名，自动创建并保存。效果如下：
 
-![img](http://modela/resources/images/classify_auto.png)
+![img](http://forgus.vicp.io/resources/images/classify_auto.png)
 
-![img](http://modela/resources/images/category_resolve.png)
+![img](http://forgus.vicp.io/resources/images/category_resolve.png)
 
-![img](http://modela/resources/images/category_resolve_result.png)
+![img](http://forgus.vicp.io/resources/images/category_resolve_result.png)
 
 备注：每个项目只需配置一次，插件会自动持久化配置项，下次打开无需再次配置。
 
 token获取方法：登录yapi，选择对应项目，找到设置→ token配置，点击复制即可。
 
-![img](http://modela/resources/images/ge't_token.png)
+![img](http://forgus.vicp.io/resources/images/ge't_token.png)
 ## 生成接口文档
 
 如果在接口类中进行文档生成操作，则插件会将文档以markdown的形式输出，默认保存在当前项目的target目录下，如图：
 
-![img](http://modela/resources/images/api_resolve.png)
+![img](http://forgus.vicp.io/resources/images/api_resolve.png)
 
 生成的接口文档效果图：
 
-![img](http://modela/resources/images/api_resolve_result.png)
+![img](http://forgus.vicp.io/resources/images/api_resolve_result.png)
 ## 生成POJO文档
 
 操作同上，步骤略。
