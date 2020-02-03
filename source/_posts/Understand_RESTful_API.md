@@ -129,7 +129,7 @@ Richardson在考察了数百种web service设计案例之后，提出了一种�
 
 ### Richardson成熟度模型
 
-![img](http://modela/resources/images/maturity_model.png)
+![img](/resources/images/maturity_model.png)
 
 如图所示，该成熟度模型用4个层级来评估一个web service满足REST约束的程度，分别是：
 
