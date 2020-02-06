@@ -14,7 +14,6 @@ sudo apt-get install vim -y
 ```
 ## 配置
 用命令`vim ~/.vimrc`打开配置文件，输入以下配置：
-
 ```
 syn on
 set number
