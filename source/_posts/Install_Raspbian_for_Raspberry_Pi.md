@@ -51,6 +51,10 @@ tags:
 3. 使用`ssh pi@192.168.21.172`免密登录服务器
 
 ## 系统配置
+### 解锁root用户
+
+`sudo passwd --unlock root`
+
 ### 安装vim
 ``` bash
 sudo apt-get remove vim-common
@@ -72,9 +76,6 @@ set number
 
 替换`127.0.0.1 raspberry` 为`127.0.0.1 model3B`
 
-### 解锁root用户
-
-`sudo passwd --unlock root`
 
 ### 替换Raspbian软件源
 
@@ -87,7 +88,7 @@ sudo cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list.ba
 
 #### 编辑软件源配置
 
-1. 用命令`sudo vi /etc/apt/sources.list`打开配置文件。
+1. 用命令`sudo vim /etc/apt/sources.list`打开配置文件。
 2. 删除原文件内容，用以下内容取代：
 
 ```bash
@@ -99,7 +100,7 @@ deb-src http://mirrors.aliyun.com/raspbian/raspbian/ stretch main contrib non-fr
 
 #### 编辑系统源配置
 
-1. 编辑系统更新源文件，参考命令：`sudo vi /etc/apt/sources.list.d/raspi.list`。
+1. 编辑系统更新源文件，参考命令：`sudo vim /etc/apt/sources.list.d/raspi.list`。
 2. 修改首行网址，如下：
 
 ```bash
@@ -114,27 +115,10 @@ deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui
 #更新软件源列表
 sudo apt-get update
 #更新软件版本
-sudo apt-get upgrade
+sudo apt-get upgrade（耗时操作）
 sudo apt-get dist-upgrade
 #更新系统内核
-sudo rpi-update
-```
-
-### 安装Vim
-
-#### 安装
-执行如下命令：
-
-``` bash
-sudo apt-get remove vim-common
-sudo apt-get install vim -y
-```
-#### 配置
-用命令`vim ~/.vimrc`打开配置文件，输入以下配置：
-
-``` 
-syn on
-set number
+sudo rpi-update（耗时操作）
 ```
 
 ### 更改分区文件大小
