@@ -44,14 +44,24 @@ tags:
 1. 将sd卡插入树莓派，接上电源，等指示灯停止闪烁之后，从路由器管理后台查看树莓派的ip地址。  
 2. 通过以下命令将电脑公钥发送给树莓派：  
 ```
-   ssh-copy-id pi@192.168.1.148
+   ssh-copy-id pi@192.168.21.172
 ```
 之后将提示输入pi用户的密码，初始密码为：raspberry
 
-3. 使用`ssh pi@192.168.1.148`免密登录服务器
+3. 使用`ssh pi@192.168.21.172`免密登录服务器
 
 ## 系统配置
+### 安装vim
+``` bash
+sudo apt-get remove vim-common
+sudo apt-get install vim -y
+```
+用命令`vim ~/.vimrc`打开配置文件，配置语法高亮和显示行号：
 
+```
+syn on
+set number
+```
 ### 修改主机名
 
 `sudo vim /etc/hostname`
@@ -61,6 +71,10 @@ tags:
 `sudo vim /etc/hosts`
 
 替换`127.0.0.1 raspberry` 为`127.0.0.1 model3B`
+
+### 解锁root用户
+
+`sudo passwd --unlock root`
 
 ### 替换Raspbian软件源
 
