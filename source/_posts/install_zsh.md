@@ -45,7 +45,22 @@ vim ~/.zshrc
 alias cls='clear'
 alias ll='ls -l'
 ```
-执行`source ~/.zshrc`使配置生效
-
 ## 插件
 ### autojump
+下载autojump源码
+```
+git clone git://github.com/joelthelion/autojump.git
+```
+安装
+```
+cd autojump
+./install.py
+```
+
+将以下代码加入.zshrc
+
+```
+[[ -s /home/pi/.autojump/etc/profile.d/autojump.sh ]] && source /home/pi/.autojump/etc/profile.d/autojump.sh
+```
+
+执行`source ~/.zshrc`使配置生效
