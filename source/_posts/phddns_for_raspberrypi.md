@@ -38,6 +38,10 @@ Note: root's PATH should usually contain /usr/local/sbin, /usr/sbin and /sbin
 ```
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
+## 配置
+用生成的SN码和默认密码admin登录花生壳管理后台：http://b.oray.com
+登录成功后，开通内网穿透功能。
+*注意：若之前已注册过账号，重新安装客户端后SN码会变更，这时候需要用新的SN码登录，然后点击切换账号用旧的账号登录下，新的映射才会生效。*
 ## 命令
 查看可用命令列表：**phddns**  
 启动：**phddns start**  
