@@ -22,7 +22,7 @@ tags:
 
 2. 用Etcher将镜像文件烧进sd卡。
 
-3. 在sd卡根目录创建一个`wpa_supplicant.conf`文件，内容如下：
+3. 在sd卡根目录(`/Volumes/boot`)创建一个`wpa_supplicant.conf`文件，内容如下：
 
    ```
    country=CN
@@ -51,20 +51,25 @@ tags:
 3. 使用`ssh pi@192.168.21.172`免密登录服务器
 
 ## 系统配置
-### 解锁root用户
+### 启用root账号
+
+解锁root账号
 
 `sudo passwd --unlock root`
+
+设置root密码
+
+`sudo passwd root`
 
 ### 安装vim
 ``` bash
 sudo apt-get remove vim-common
 sudo apt-get install vim -y
 ```
-用命令`vim ~/.vimrc`打开配置文件，配置语法高亮和显示行号：
+用命令`vim ~/.vimrc`打开配置文件，配置语法高亮：
 
 ```
 syn on
-set number
 ```
 ### 修改主机名
 
@@ -92,8 +97,8 @@ sudo cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list.ba
 2. 删除原文件内容，用以下内容取代：
 
 ```bash
-deb http://mirrors.aliyun.com/raspbian/raspbian/ stretch main contrib non-free
-deb-src http://mirrors.aliyun.com/raspbian/raspbian/ stretch main contrib non-free
+deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ stretch main contrib non-free rpi
+deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ stretch main contrib non-free rpi
 ```
 
 *注：此处示例为**stretch**系统，**jessie**和**wheezy**类推。*
@@ -104,7 +109,8 @@ deb-src http://mirrors.aliyun.com/raspbian/raspbian/ stretch main contrib non-fr
 2. 修改首行网址，如下：
 
 ```bash
-deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui
+deb http://mirror.tuna.tsinghua.edu.cn/raspberrypi/ stretch main ui
+deb-src http://mirror.tuna.tsinghua.edu.cn/raspberrypi/ stretch main ui
 # Uncomment line below then 'apt-get update' to enable 'apt-get source'
 #deb-src http://archive.raspberrypi.org/debian/ stretch main ui
 ```
