@@ -29,7 +29,7 @@ sudo apt-get install zsh
 ```
 
 ## 安装oh my zsh
-确保你已经安装了git。
+确保你已经安装了git。`sudo apt-get install git`
 
 然后执行以下命令即可进行自动安装:
 
@@ -44,8 +44,10 @@ vim ~/.zshrc
 ```zsh
 alias cls='clear'
 alias ll='ls -l'
+# 推荐主题：michelebologna、fishy，更多主题可翻看https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ```
 ## 插件
+
 ### autojump
 下载autojump源码
 ```
