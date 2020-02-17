@@ -9,21 +9,21 @@ tags:
 
 >前后分离开发模式下，接口文档是否靠谱直接影响开发协作效率，因此文档的时效性和准确性至关重要，但是，文档的维护又是一项琐碎耗时的工作，手工录入不仅麻烦，还存在出错的风险，因此，如果能有自动生成文档的方法，将极大地提升开发效率。
 
-# 前言
+## 前言
 
 ​		一般来讲，接口文档由后端同学维护，而Java是目前主流的后端语言，与之对应的，IDEA是最流行的集成开发环境。基于插件机制，IDEA拥有极强的可扩展性，因此，思路是开发一个IDEA插件，通过插件让手中的IDEA拥有自动生成文档的能力。
 
 ​		其实，jetbrains插件仓库里已有几款插件可以帮助生成接口文档，但是没有一款插件令我满意，要么无法解析复杂的类结构，要么就是生成的文档格式差强人意，因此，我在借鉴他们的设计的基础上，开发了这款文档生成插件，我将它取名为《Api Generator》。
 
-# 安装插件
+## 安装插件
 
 Preferences → Plugins → Marketplace → 搜索“Api Generator” → 安装该插件 → 重启IDE
 
 ![img](http://forgus.vicp.io/resources/images/install_api_generator.png)
 
-# 开始使用
+## 开始使用
 
-## 上传REST接口
+### 上传REST接口
 
 选择一个Controller类，将光标定位到方法区（方法名或者方法注释），点击鼠标右键，在弹出的菜单项里选择“Generate Api”。如图所示：
 
@@ -78,7 +78,7 @@ Preferences → Other Settings → Api Generator Setting → YApi Setting → De
 token获取方法：登录yapi，选择对应项目，找到设置→ token配置，点击复制即可。
 
 ![img](http://forgus.vicp.io/resources/images/ge't_token.png)
-## 生成接口文档
+### 生成接口文档
 
 如果在接口类中进行文档生成操作，则插件会将文档以markdown的形式输出，默认保存在当前项目的target目录下，如图：
 
@@ -87,11 +87,11 @@ token获取方法：登录yapi，选择对应项目，找到设置→ token配�
 生成的接口文档效果图：
 
 ![img](http://forgus.vicp.io/resources/images/api_resolve_result.png)
-## 生成POJO文档
+### 生成POJO文档
 
 操作同上，步骤略。
 
-# 后记
+## 后记
 
 笔者在开发这款插件之前，也是先用了一段时间别人写的插件，
 
