@@ -78,7 +78,7 @@ Preferences → Other Settings → Api Generator Setting → YApi Setting → De
 ### token获取方法
 登录yapi，选择对应项目，找到设置→ token配置，点击复制即可。
 
-![img](http://forgus.vicp.io/resources/images/ge't_token.png)
+![img](http://forgus.vicp.io/resources/images/get_token.png)
 ## 生成接口文档
 
 如果在接口类中进行文档生成操作，则插件会将文档以markdown的形式输出，默认保存在当前项目的target目录下，如图：
