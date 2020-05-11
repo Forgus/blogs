@@ -61,9 +61,6 @@ public void dfs(TreeNode x) {
 
 ```java
 public void bfs(TreeNode x) {
-  if(x == null) {
-    return;
-  }
   Queue<TreeNode> queue = new LinkedList<>();
   queue.add(x);
   while(!queue.isEmpty()) {
@@ -71,12 +68,8 @@ public void bfs(TreeNode x) {
     while(count > 0) {
       TreeNode node = queue.poll();
     	//do something
-      if(x.left != null) {
-        queue.add(x.left);
-      }
-      if(x.right != null) {
-        queue.add(x.right);
-      }
+      if(node.left != null) queue.add(node.left);
+      if(node.right != null) queue.add(node.right);
       count --;
     }
   }
