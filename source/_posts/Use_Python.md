@@ -79,6 +79,29 @@ import car
 from car import *
 ```
 
+## pip
+
+### 安装
+
+```shell
+# 下载安装脚本
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+# 运行安装脚本
+sudo python3 get-pip.py
+```
+
+### 切换镜像源
+
+**Linux下**，修改 ~/.pip/pip.conf (没有就创建一个文件夹及文件。文件夹要加“.”，表示是隐藏文件夹)
+内容如下：
+
+```
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+[install]
+trusted-host = https://pypi.tuna.tsinghua.edu.cn
+```
+
 
 
 
