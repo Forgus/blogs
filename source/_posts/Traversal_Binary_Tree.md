@@ -12,6 +12,8 @@ tags:
 
 ### 前序遍历
 
+#### 递归法
+
 ```java
 public void dfs(TreeNode x) {
   if(x == null) {
@@ -20,6 +22,28 @@ public void dfs(TreeNode x) {
   //do something
   dfs(x.left);
   dfs(x.right);
+}
+```
+
+#### 迭代法
+
+```java
+public void dfs(TreeNode x) {
+  if(x == null) {
+    return;
+  }
+  Stack<TreeNode> stack = new Stack<>();
+  stack.push(x);
+  while(!stack.empty()) {
+    TreeNode node = stack.pop();
+    //do something
+    if(node.right != null) {
+      stack.push(node.right);
+    }
+    if(node.left != null) {
+      stack.push(node.left);
+    }
+  }
 }
 ```
 
@@ -27,6 +51,10 @@ public void dfs(TreeNode x) {
 
 ### 中序遍历
 
+中序遍历可以按顺序访问二叉搜索树中的节点。
+
+#### 递归法
+
 ```java
 public void dfs(TreeNode x) {
   if(x == null) {
@@ -38,9 +66,9 @@ public void dfs(TreeNode x) {
 }
 ```
 
-中序遍历可以按顺序访问二叉搜索树中的节点。
-
 ### 后序遍历
+
+#### 递归法
 
 ```java
 public void dfs(TreeNode x) {
@@ -61,6 +89,9 @@ public void dfs(TreeNode x) {
 
 ```java
 public void bfs(TreeNode x) {
+  if(x == null) {
+    return;
+  }
   Queue<TreeNode> queue = new LinkedList<>();
   queue.add(x);
   while(!queue.isEmpty()) {
