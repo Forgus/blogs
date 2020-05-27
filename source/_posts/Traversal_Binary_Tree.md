@@ -66,6 +66,29 @@ public void dfs(TreeNode x) {
 }
 ```
 
+#### 迭代法
+
+```java
+public void dfs(TreeNode x) {
+  if(x == null) {
+    return;
+  }
+  Stack<TreeNode> stack = new Stack<>();
+  TreeNode curr = x;
+  while(curr != null || !stack.empty()) {
+    while(curr != null) {
+      stack.push(curr);
+      curr = curr.left;
+    }
+    curr = stack.pop();
+    //do something
+    curr = curr.right;
+  }
+}
+```
+
+
+
 ### 后序遍历
 
 #### 递归法
