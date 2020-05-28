@@ -104,6 +104,35 @@ public void dfs(TreeNode x) {
 }
 ```
 
+#### 迭代法
+
+```java
+public void dfs(TreeNode x) {
+  if(x == null) {
+    return;
+  }
+  Stack<TreeNode> stack = new Stack<>();
+  Stack<TreeNode> result = new Stack<>();
+  stack.push(x);
+  while(!stack.empty()) {
+    TreeNode node = stack.pop();
+		result.push(node);
+    if(node.left != null) {
+      stack.push(node.letf);
+    }
+    if(node.right != null) {
+      stack.push(node.right);
+    }
+  }
+  while(!result.empty()) {
+    TreeNode node = result.pop();
+    //do something
+  }
+}
+```
+
+
+
 ## 广度优先搜索
 
 广度优先搜索（Breadth First Search），即层序遍历，一般用队列加两层循环实现，外层循环遍历树的层次，内循环遍历每一层的节点。
