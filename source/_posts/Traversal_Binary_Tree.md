@@ -116,7 +116,7 @@ public void dfs(TreeNode x) {
   stack.push(x);
   while(!stack.empty()) {
     TreeNode node = stack.pop();
-		result.push(node);
+    result.push(node);
     if(node.left != null) {
       stack.push(node.letf);
     }
