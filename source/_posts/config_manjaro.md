@@ -20,10 +20,10 @@ sudo nano /etc/pacman.conf
 ```
 [archlinuxcn]
 SigLevel = Never
-# 清华源
-Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 # 浙大源
 Server = https://mirrors.zju.edu.cn/archlinuxcn/$arch
+# 清华源
+# Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 ```
 更新源：
 
@@ -31,6 +31,9 @@ Server = https://mirrors.zju.edu.cn/archlinuxcn/$arch
 sudo pacman-mirrors -c China
 sudo pacman -Syu
 sudo pacman -S archlinuxcn-keyring
+# 设置dpi
+vim ~/.Xresources
+Xft.dpi:166
 # 重启
 reboot
 ```
@@ -67,6 +70,8 @@ fish_config
 ```shell
 # 设置快捷键
 alias c clear
+funcsave c
+alias s screenfetch
 funcsave c
 ```
 
@@ -105,9 +110,6 @@ reboot
 #### 配置
 
 ```shell
-vim ~/.Xresources
-Xft.dpi:200
-reboot
 vim ~/.config/i3/config
 bindsym $mod+Return exec alacritty
 bindsym $mod+c exec firefox
