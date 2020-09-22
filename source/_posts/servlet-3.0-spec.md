@@ -8,5 +8,5 @@ tags:
 ---
 
 ## 官方文档
-https://download.oracle.com/otn-pub/jcp/servlet-3.0-mrel-eval-oth-JSpec/servlet-3_0-mrel-spec.pdf?AuthParam=1600688375_b7c42cd6121ce7955913ea7bef5ccb3f
+https://download.oracle.com/otn-pub/jcp/servlet-3.0-mrel-eval-oth-JSpec/servlet-3_0-mrel-spec.pdf
 
